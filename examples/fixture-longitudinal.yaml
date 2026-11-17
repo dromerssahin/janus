@@ -1,0 +1,12 @@
+schema_version: "2"
+observations:
+  - {patient_id: L001, episode_id: E1, start_day: 0, end_day: 365}
+  - {patient_id: L002, episode_id: E1, start_day: 0, end_day: 20, censoring_reason: fictional_transfer}
+events:
+  - {patient_id: L001, episode_id: E1, id: L1I, variable: exposure, value: "true", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: L001, episode_id: E1, id: L1A, variable: outcome, value: "false", event_day: 10, recording_day: 10, provenance: fictional}
+  - {patient_id: L001, episode_id: E1, id: L1B, variable: outcome, value: "true", event_day: 30, recording_day: 31, provenance: fictional}
+  - {patient_id: L001, episode_id: E1, id: L1M, variable: outcome, missing: "unknown", event_day: 50, recording_day: 50, provenance: fictional}
+  - {patient_id: L002, episode_id: E1, id: L2I, variable: exposure, value: "false", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: L002, episode_id: E1, id: L2A, variable: outcome, value: "true", event_day: 10, recording_day: 10, provenance: fictional}
+  - {patient_id: L002, episode_id: E1, id: L2B, variable: outcome, value: "false", event_day: 30, recording_day: 30, provenance: fictional}

@@ -1,0 +1,18 @@
+schema_version: "1"
+protocol_id: hemoval-development-comparison-v1-draft
+contract_id: hemoval-development-coherence-v1-draft
+candidates:
+  - name: learned_binned_dag
+    preprocessing: seed-101 reservation; identical WFNS/mRS mapping; missing retained
+    status: baseline
+  - name: interaction_binned_dag
+    preprocessing: seed-101 reservation; identical WFNS/mRS mapping; missing retained
+    status: baseline
+  - name: experimental_neural
+    preprocessing: seed-101 reservation; identical WFNS/mRS mapping; missing retained
+    status: exploratory_only
+mapping_fingerprint: fictional-hemoval-mapping
+populations: [development_298_patients, same_size_synthetic, inner_validation]
+sample_count: 298
+seeds: [11, 22, 33]
+metrics: [marginal_tvd, selected_joint_tvd, utility_brier, missingness_counts]

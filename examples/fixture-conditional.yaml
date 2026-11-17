@@ -1,0 +1,27 @@
+schema_version: "2"
+observations:
+  - {patient_id: A001, episode_id: E1, start_day: 0, end_day: 365}
+  - {patient_id: A002, episode_id: E1, start_day: 0, end_day: 365}
+  - {patient_id: A003, episode_id: E1, start_day: 0, end_day: 365}
+  - {patient_id: A004, episode_id: E1, start_day: 0, end_day: 365}
+events:
+  - {patient_id: A001, episode_id: E1, id: A1I, variable: exposure, value: "true", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A001, episode_id: E1, id: A1S, variable: baseline_severity, value: "1", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A001, episode_id: E1, id: A1C, variable: baseline_comorbidity, value: "false", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A001, episode_id: E1, id: A1T, variable: treatment_group, value: "standard", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A001, episode_id: E1, id: A1O, variable: outcome, value: "false", event_day: 30, recording_day: 30, provenance: fictional}
+  - {patient_id: A002, episode_id: E1, id: A2I, variable: exposure, value: "true", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A002, episode_id: E1, id: A2S, variable: baseline_severity, value: "2", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A002, episode_id: E1, id: A2C, variable: baseline_comorbidity, value: "true", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A002, episode_id: E1, id: A2T, variable: treatment_group, value: "enhanced", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A002, episode_id: E1, id: A2O, variable: outcome, value: "true", event_day: 30, recording_day: 30, provenance: fictional}
+  - {patient_id: A003, episode_id: E1, id: A3I, variable: exposure, value: "false", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A003, episode_id: E1, id: A3S, variable: baseline_severity, value: "1", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A003, episode_id: E1, id: A3C, variable: baseline_comorbidity, value: "false", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A003, episode_id: E1, id: A3T, variable: treatment_group, value: "standard", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A003, episode_id: E1, id: A3O, variable: outcome, value: "false", event_day: 30, recording_day: 30, provenance: fictional}
+  - {patient_id: A004, episode_id: E1, id: A4I, variable: exposure, value: "false", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A004, episode_id: E1, id: A4S, variable: baseline_severity, value: "2", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A004, episode_id: E1, id: A4C, variable: baseline_comorbidity, value: "true", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A004, episode_id: E1, id: A4T, variable: treatment_group, value: "enhanced", event_day: 0, recording_day: 0, provenance: fictional}
+  - {patient_id: A004, episode_id: E1, id: A4O, variable: outcome, value: "true", event_day: 30, recording_day: 30, provenance: fictional}

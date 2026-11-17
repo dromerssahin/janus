@@ -1,0 +1,4 @@
+schema_version: "2"
+pairs:
+  severity_outcome: {exposure: baseline_severity, outcome: outcome}
+  comorbidity_outcome: {exposure: baseline_comorbidity, outcome: outcome}

@@ -1,0 +1,11 @@
+schema_version: "1"
+protocol_id: hemoval-development-coherence-v1-draft
+contract_id: hemoval-development-coherence-v1-draft
+candidate: learned_binned_dag
+preprocessing: source reservation seed 101 before eligibility; missing values retained
+populations: [development_298_patients, synthetic_same_size]
+seeds: [11, 22, 33]
+software: janus-fictional-fixture
+source_fingerprints: [fictional-source-fingerprint]
+reviewer_protocol_version: null
+reservation_status: inspected_reference_excluded

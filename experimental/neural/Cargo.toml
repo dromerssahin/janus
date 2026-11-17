@@ -1,0 +1,9 @@
+[workspace]
+
+[package]
+name = "janus-neural"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tch = "=0.20.0"

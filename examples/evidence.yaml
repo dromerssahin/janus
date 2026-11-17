@@ -1,0 +1,47 @@
+schema_version: "1"
+records:
+  - id: fictional-follow-up
+    title: Fictional follow-up
+    description: Illustrative protocol duration.
+    source_type: fictional_assumption
+    population_context: Fictional episodes only.
+    rationale: The example uses a 365-day follow-up.
+    limitations: This is not clinical evidence.
+    review_status: manually_curated
+    links: [study.follow_up_days]
+  - id: fictional-count
+    title: Fictional event counts
+    description: Illustrative repeated outcome count distribution.
+    source_type: fictional_assumption
+    population_context: Fictional episodes only.
+    rationale: Probabilities exercise zero, one, and many events.
+    limitations: These probabilities are not estimates.
+    review_status: manually_curated
+    links: [generator.repeated.outcome.count]
+  - id: fictional-timing
+    title: Fictional event timing
+    description: Uniform timing within follow-up.
+    source_type: fictional_assumption
+    population_context: Fictional episodes only.
+    rationale: Timing covers the inclusive example window.
+    limitations: This is not a clinical timing model.
+    review_status: manually_curated
+    links: [generator.repeated.outcome.timing]
+  - id: fictional-value
+    title: Fictional outcome values
+    description: Illustrative categorical distribution.
+    source_type: fictional_assumption
+    population_context: Fictional episodes only.
+    rationale: Values exercise categorical generation.
+    limitations: These probabilities are not estimates.
+    review_status: manually_curated
+    links: [generator.variable.outcome.value]
+  - id: fictional-coverage
+    title: Fictional complete observation
+    description: Assumed complete coverage of follow-up.
+    source_type: fictional_assumption
+    population_context: Fictional episodes only.
+    rationale: Coverage enables the example evaluation.
+    limitations: Complete observation is not established in real data.
+    review_status: manually_curated
+    links: [generator.coverage]

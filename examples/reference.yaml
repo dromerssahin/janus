@@ -1,0 +1,16 @@
+# Fictional reference events, prepared independently for this example.
+schema_version: "2"
+observations:
+  - {patient_id: R001, episode_id: R001, start_day: 0, end_day: 365}
+  - {patient_id: R002, episode_id: R002, start_day: 0, end_day: 365}
+events:
+  - {patient_id: R001, episode_id: R001, id: R001I, variable: exposure, value: "true", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R001, episode_id: R001, id: R001S, variable: baseline_severity, value: "1", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R001, episode_id: R001, id: R001C, variable: baseline_comorbidity, value: "false", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R001, episode_id: R001, id: R001T, variable: treatment_group, value: "standard", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R001, episode_id: R001, id: R001O, variable: outcome, value: "true", event_day: 5, recording_day: 5, provenance: fictional_reference}
+  - {patient_id: R002, episode_id: R002, id: R002I, variable: exposure, value: "false", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R002, episode_id: R002, id: R002S, variable: baseline_severity, value: "2", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R002, episode_id: R002, id: R002C, variable: baseline_comorbidity, value: "true", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R002, episode_id: R002, id: R002T, variable: treatment_group, value: "enhanced", event_day: 0, recording_day: 0, provenance: fictional_reference}
+  - {patient_id: R002, episode_id: R002, id: R002O, variable: outcome, value: "false", event_day: 5, recording_day: 5, provenance: fictional_reference}

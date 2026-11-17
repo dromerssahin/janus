@@ -1,0 +1,6 @@
+schema_version: "3"
+outcome_timing:
+  variable: outcome
+  bins:
+    - {start_day: 0, end_day: 30}
+    - {start_day: 31, end_day: 365}

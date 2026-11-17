@@ -1,0 +1,7 @@
+schema_version: "4"
+longitudinal:
+  start_day: 0
+  end_day: 365
+  variables: [exposure, outcome]
+  pairs:
+    exposure_to_outcome: {exposure: exposure, outcome: outcome}

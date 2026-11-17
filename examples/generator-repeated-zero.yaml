@@ -1,0 +1,31 @@
+schema_version: "4"
+seed: 2718
+episode_count: 100
+complete_observation: true
+variables:
+  - name: exposure
+    outcomes:
+      - {value: "true", probability: 0.5, event_day: 0, recording_day: 0}
+      - {value: "false", probability: 0.5, event_day: 0, recording_day: 0}
+  - name: outcome
+    outcomes:
+      - {value: "true", probability: 0.25, event_day: 30, recording_day: 30}
+      - {value: "false", probability: 0.75, event_day: 30, recording_day: 30}
+  - name: baseline_severity
+    outcomes:
+      - {value: "1", probability: 0.5, event_day: 0, recording_day: 0}
+      - {value: "2", probability: 0.5, event_day: 0, recording_day: 0}
+  - name: baseline_comorbidity
+    outcomes:
+      - {value: "true", probability: 0.3, event_day: 0, recording_day: 0}
+      - {value: "false", probability: 0.7, event_day: 0, recording_day: 0}
+  - name: treatment_group
+    outcomes:
+      - {value: "standard", probability: 0.5, event_day: 0, recording_day: 0}
+      - {value: "enhanced", probability: 0.5, event_day: 0, recording_day: 0}
+repeated_events:
+  - variable: outcome
+    counts:
+      - {count: 0, probability: 1.0}
+    start_day: 300
+    end_day: 365

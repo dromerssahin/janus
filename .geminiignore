@@ -1,0 +1,7 @@
+target/
+.venv/
+__pycache__/
+*.parquet
+*.csv
+*.pt
+*.safetensors

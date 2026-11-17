@@ -1,0 +1,7 @@
+schema_version: "2"
+pairs:
+  severity_outcome: {exposure: baseline_severity, outcome: outcome}
+uncertainty:
+  seed: 12345
+  replicates: 1000
+  confidence_level: 0.95

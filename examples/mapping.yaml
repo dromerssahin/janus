@@ -1,0 +1,37 @@
+schema_version: '1'
+study:
+  schema_version: '2'
+  name: fictional_event_cohort
+  unit: episode
+  variables:
+  - name: exposure
+    kind: boolean
+    role: index_context
+  - name: baseline_severity
+    kind: integer
+    role: baseline
+  - name: baseline_comorbidity
+    kind: boolean
+    role: baseline
+  - name: treatment_group
+    kind: string
+    role: index_context
+  - name: outcome
+    kind: boolean
+    role: follow_up_outcome
+  index: exposure
+  eligibility: []
+  follow_up_days: 365
+pre_deidentified: true
+data_use_permitted: true
+permitted_data_use: fictional example only
+columns:
+  patient_id: patient_id
+  episode_id: episode_id
+  source_event_id: source_event_id
+  variable: variable
+  value: value
+  missing_reason: missing_reason
+  event_day: event_day
+  recording_day: recording_day
+  provenance: provenance

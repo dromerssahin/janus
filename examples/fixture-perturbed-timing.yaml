@@ -1,0 +1,5 @@
+schema_version: "2"
+observations:
+  - {patient_id: P001, episode_id: E001, start_day: 0, end_day: 365}
+events:
+  - {patient_id: P001, episode_id: E001, id: BAD001, variable: exposure, value: "true", event_day: 0, recording_day: -1, provenance: fictional_perturbation}

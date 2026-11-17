@@ -1,0 +1,19 @@
+[project]
+name = "janus-neural-bridge"
+version = "0.1.0"
+description = "Thin Python CTGAN/TVAE bridge for Janus synthetic cohort generation"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "ctgan>=0.10",
+    "pandas>=2.0",
+    "torch>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+norecursedirs = ["datasets", "target", "experimental", ".venv", ".git"]

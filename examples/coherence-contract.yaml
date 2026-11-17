@@ -1,0 +1,26 @@
+schema_version: "1"
+contract_id: hemoval-development-coherence-v1-draft
+status: draft_technical_review_complete
+study: HeMoVal
+patient_unit: record_id_with_repeat_instruments_grouped
+variables:
+  - name: ha_wfns
+    role: admission_context
+    meaning: admission WFNS from the documented baseline event
+    timing: admission; individual recording time not verified
+    units: dimensionless ordinal grade
+    allowed_values: ["1", "2", "3", "4", "5"]
+    missing_is_structural_absence: false
+  - name: fup_mrs
+    role: follow_up_outcome
+    meaning: mRS in the event designated 12 weeks
+    timing: intended 12 weeks plus or minus 2 weeks; individual timing not verified
+    units: dimensionless ordinal grade
+    allowed_values: ["0", "1", "2", "3", "4", "5", "6"]
+    missing_is_structural_absence: false
+limitations:
+  - Two variables cannot establish whole-patient realism.
+  - The development population and outcomes were previously inspected.
+unresolved_assumptions:
+  - Clinician and study-researcher review has not approved plausibility relationships.
+  - Individual follow-up timing is unavailable.

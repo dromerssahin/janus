@@ -1,0 +1,3 @@
+[workspace]
+members = ["crates/janus", "apps/janus-cli"]
+resolver = "2"

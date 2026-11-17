@@ -1,0 +1,5 @@
+schema_version: "1"
+seed: 41
+episode_count: 100
+event_day: 0
+recording_day: 0

@@ -1,0 +1,16 @@
+schema_version: "3"
+seed: 41
+episode_count: 100
+event_day: 0
+recording_day: 0
+variables:
+  - {name: exposure}
+  - {name: baseline_severity}
+  - {name: baseline_comorbidity}
+  - {name: treatment_group}
+  - {name: outcome, parents: [baseline_severity]}
+timing:
+  variable: outcome
+  bins:
+    - {start_day: 0, end_day: 30}
+    - {start_day: 31, end_day: 365}

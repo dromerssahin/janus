@@ -1,0 +1,29 @@
+schema_version: "1"
+benchmark: concrete-descriptive-study
+study: examples/study.yaml
+fixtures:
+  source: examples/fixture.yaml
+  development: development.yaml
+  holdout: holdout.yaml
+  reference: examples/reference.yaml
+  synthetic: synthetic/fixture.yaml
+split:
+  algorithm: patient-fnv1a-splitmix64
+  seed: 17
+variables: [severity, comorbidity, treatment_group, outcome]
+windows:
+  index_day: 0
+  follow_up_end_day: 365
+thresholds:
+  max_missingness_delta: 0.25
+  max_timing_delta_days: 30
+  require_patient_disjoint_split: true
+expected_failures: [timing, missingness, category_imbalance, leakage, provenance]
+semantics:
+  unit: patient_episode
+  index: exposure_event_day_0
+  outcome: binary_through_inclusive_day_365
+  repeated_episodes: true
+  preserve_event_and_recording_time: true
+  states: [value, missing, absent, incomplete_observation, censored]
+limitations: descriptive_only

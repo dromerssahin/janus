@@ -1,0 +1,4 @@
+# DuckDB 1.2.2's bundled Parquet Thrift sources omit <cstdint> with the
+# GCC toolchain tested on this target. Do not pass GCC flags to MSVC.
+[env]
+CXXFLAGS_x86_64_unknown_linux_gnu = { value = "-include cstdint", force = false }

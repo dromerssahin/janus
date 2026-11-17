@@ -1,0 +1,16 @@
+patient_id,episode_id,source_event_id,variable,value,missing_reason,event_day,recording_day,provenance
+P001,E001,EVT001,exposure,true,,0,0,fictional_fixture
+P001,E001,EVT006,baseline_severity,1,,0,0,fictional_fixture
+P001,E001,EVT007,baseline_comorbidity,false,,0,0,fictional_fixture
+P001,E001,EVT008,treatment_group,standard,,0,0,fictional_fixture
+P001,E001,EVT002,outcome,false,,365,365,fictional_fixture
+P001,E002,EVT003,exposure,true,,400,400,fictional_fixture
+P001,E002,EVT009,baseline_severity,2,,399,400,fictional_fixture
+P001,E002,EVT010,baseline_comorbidity,true,,400,400,fictional_fixture
+P001,E002,EVT011,treatment_group,enhanced,,400,400,fictional_fixture
+P001,E002,EVT004,outcome,,not_recorded,410,410,fictional_fixture
+P002,E003,EVT005,outcome,true,,0,0,fictional_fixture
+P002,E003,EVT012,exposure,false,,0,0,fictional_fixture
+P002,E003,EVT013,baseline_severity,1,,0,0,fictional_fixture
+P002,E003,EVT014,baseline_comorbidity,false,,0,0,fictional_fixture
+P002,E003,EVT015,treatment_group,standard,,0,0,fictional_fixture

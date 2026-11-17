@@ -1,0 +1,17 @@
+schema_version: "2"
+observations:
+  - {patient_id: P001, episode_id: E001, start_day: 0, end_day: 365}
+  - {patient_id: P001, episode_id: E002, start_day: 399, end_day: 500, censoring_reason: fictional_transfer}
+  - {patient_id: P002, episode_id: E003, start_day: 0}
+events:
+  - {patient_id: P001, episode_id: E001, id: EVT001, variable: exposure, value: "true", event_day: 0, recording_day: 0, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E001, id: EVT006, variable: baseline_severity, value: "1", event_day: 0, recording_day: 0, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E001, id: EVT007, variable: baseline_comorbidity, value: "false", event_day: 0, recording_day: 0, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E001, id: EVT008, variable: treatment_group, value: "standard", event_day: 0, recording_day: 0, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E001, id: EVT002, variable: outcome, value: "false", event_day: 365, recording_day: 365, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E002, id: EVT003, variable: exposure, value: "true", event_day: 400, recording_day: 400, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E002, id: EVT009, variable: baseline_severity, value: "2", event_day: 399, recording_day: 400, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E002, id: EVT010, variable: baseline_comorbidity, missing: "unknown", event_day: 400, recording_day: 400, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E002, id: EVT011, variable: treatment_group, value: "enhanced", event_day: 400, recording_day: 400, provenance: fictional_fixture}
+  - {patient_id: P001, episode_id: E002, id: EVT004, variable: outcome, missing: "not_recorded", event_day: 410, recording_day: 410, provenance: fictional_fixture}
+  - {patient_id: P002, episode_id: E003, id: EVT005, variable: outcome, value: "true", event_day: 0, recording_day: 0, provenance: fictional_fixture}

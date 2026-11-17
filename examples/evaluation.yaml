@@ -1,0 +1,8 @@
+schema_version: "1"
+joint:
+  exposure: exposure
+  outcome: outcome
+temporal:
+  windows:
+    - {name: baseline, start_day: 0, end_day: 0}
+    - {name: follow_up, start_day: 1, end_day: 365}

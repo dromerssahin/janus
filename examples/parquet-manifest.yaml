@@ -1,0 +1,109 @@
+schema_version: '1'
+study_fingerprint: fnv1a64-yaml:b0b83358ad114fcf
+mapping_fingerprint: fnv1a64-yaml:fab6b1ba015846c9
+mapping:
+  schema_version: '1'
+  study:
+    schema_version: '2'
+    name: fictional_event_cohort
+    unit: episode
+    variables:
+    - name: exposure
+      kind: boolean
+      role: index_context
+    - name: baseline_severity
+      kind: integer
+      role: baseline
+    - name: baseline_comorbidity
+      kind: boolean
+      role: baseline
+    - name: treatment_group
+      kind: string
+      role: index_context
+    - name: outcome
+      kind: boolean
+      role: follow_up_outcome
+    index: exposure
+    eligibility: []
+    follow_up_days: 365
+  pre_deidentified: true
+  permitted_data_use: fictional example only
+  data_use_permitted: true
+  columns:
+    episode_id: episode_id
+    event_day: event_day
+    missing_reason: missing_reason
+    patient_id: patient_id
+    provenance: provenance
+    recording_day: recording_day
+    source_event_id: source_event_id
+    value: value
+    variable: variable
+source_row_count: 15
+data_fingerprint: fnv1a64-bytes:722ac9c6cf1c1aef
+columns:
+- name: patient_id
+  data_type: string
+  nullable: false
+- name: episode_id
+  data_type: string
+  nullable: false
+- name: source_event_id
+  data_type: string
+  nullable: false
+- name: variable
+  data_type: string
+  nullable: false
+- name: value_string
+  data_type: string
+  nullable: true
+- name: value_integer
+  data_type: int64
+  nullable: true
+- name: value_number
+  data_type: float64
+  nullable: true
+- name: value_boolean
+  data_type: boolean
+  nullable: true
+- name: value_original
+  data_type: string
+  nullable: true
+- name: missing_reason
+  data_type: string
+  nullable: true
+- name: event_day
+  data_type: int64
+  nullable: false
+- name: recording_day
+  data_type: int64
+  nullable: false
+- name: provenance
+  data_type: string
+  nullable: false
+- name: observation_start_day
+  data_type: int64
+  nullable: true
+- name: observation_end_day
+  data_type: int64
+  nullable: true
+- name: censoring_reason
+  data_type: string
+  nullable: true
+adapter_version: '1'
+creation_software:
+  package_version: 0.1.0
+  rustc: rustc 1.99.1 (58cf8f9c3 2026-10-13)
+  target: x86_64-unknown-linux-gnu
+  dependency_lock_fingerprint: fnv1a64-yaml:305e982544a85fbc
+  operating_system: linux
+  architecture: x86_64
+  limitations: Build toolchain and target are informational; environment, compiler flags, floating-point behavior and serialization can affect reproducibility. Lockfile identity does not prove the dependencies used at runtime.
+artifacts:
+- data.parquet
+- schema.yaml
+- validation.yaml
+- manifest.yaml
+limitations:
+- Declarations and header checks do not establish governance approval, anonymization, clinical validity, privacy, or external validity.
+- Fingerprints are non-cryptographic identity checks and software and environment changes can affect reproducibility.

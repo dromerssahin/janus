@@ -1,0 +1,22 @@
+# Fictional protocol: exposure is the index event; its event day is day 0 for
+# each episode. Baseline severity and comorbidity are assessed at or before the
+# index; treatment group is index-time context. Outcome is assessed during
+# days 0-365 inclusive. The fixture may contain repeated episodes per patient. Event and
+# recording days are distinct; recording cannot precede the event. A value is
+# available by a window end only when recorded by that day. Explicit missing
+# reasons differ from absence. Observation bounds and censoring are descriptive;
+# absence does not imply complete follow-up or that an event did not occur.
+# Descriptive targets are categorical frequencies, event timing, recording
+# delays, episode counts and window-specific missingness, without causal claims.
+schema_version: "2"
+name: fictional_event_cohort
+unit: episode
+variables:
+  - {name: exposure, kind: boolean, role: index_context}
+  - {name: baseline_severity, kind: integer, role: baseline}
+  - {name: baseline_comorbidity, kind: boolean, role: baseline}
+  - {name: treatment_group, kind: string, role: index_context}
+  - {name: outcome, kind: boolean, role: follow_up_outcome}
+index: exposure
+eligibility: []
+follow_up_days: 365
